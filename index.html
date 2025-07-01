@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Channel Name – Official Site</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; margin:0; padding:0; color:#333; line-height:1.6; }
+    header, footer { background:#111; color:#fff; text-align:center; padding:1rem 0; }
+    nav a { margin:0 1rem; color:#fff; text-decoration:none; }
+    .hero { position:relative; text-align:center; color:#fff; }
+    .hero img { width:100%; height:auto; }
+    .hero .overlay { position:absolute; top:50%; left:50%; transform: translate(-50%, -50%); }
+    .section { padding:2rem 1rem; max-width:1000px; margin:auto; }
+    .videos iframe { width:100%; max-width:560px; height:315px; margin:1rem auto; display:block; }
+    .gallery { display:flex; gap:1rem; flex-wrap:wrap; justify-content:center; }
+    .gallery img { width:200px; border-radius:8px; }
+    @media (min-width:600px) {
+      .videos { display:flex; justify-content:space-around; flex-wrap:wrap; }
+      .videos iframe { margin:1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Your Channel Name</h1>
+  <nav>
+    <a href="#videos">Videos</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#kali">About Kali Linux</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <img src="https://via.placeholder.com/1200x400.png?text=Your+Channel+Banner" alt="Channel Banner">
+  <div class="overlay">
+    <h2>Welcome to my official website!</h2>
+    <p>Explore my videos, enjoy exclusive photos, and learn about Kali Linux.</p>
+  </div>
+</section>
+
+<section id="videos" class="section">
+  <h2>📺 Latest Videos</h2>
+  <div class="videos">
+    <!-- Embed specific videos by ID -->
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" allowfullscreen></iframe>
+  </div>
+  <p style="text-align:center">
+    <a href="https://www.youtube.com/channel/UCD-L646gqj0F_bIe2xZ8FYw" target="_blank">View all videos on YouTube</a>
+  </p>
+</section>
+
+<section id="gallery" class="section">
+  <h2>🖼 Cool Images</h2>
+  <div class="gallery">
+    <!-- Display some cool local images -->
+    <img src="https://via.placeholder.com/200x150?text=Cool+Image+1" alt="Cool image 1">
+    <img src="https://via.placeholder.com/200x150?text=Cool+Image+2" alt="Cool image 2">
+    <img src="https://via.placeholder.com/200x150?text=Cool+Image+3" alt="Cool image 3">
+  </div>
+</section>
+
+<section id="kali" class="section">
+  <h2>🛡 About Kali Linux</h2>
+  <p><strong>Kali Linux</strong> is a Debian‑based, open‑source Linux distribution tailored for cybersecurity, penetration testing, digital forensics, and reverse engineering :contentReference[oaicite:2]{index=2}.</p>
+  <p>It comes pre-installed with over 600 essential security tools—like <em>Nmap</em>, <em>Metasploit</em>, <em>Wireshark</em>, and <em>John the Ripper</em> :contentReference[oaicite:3]{index=3}.</p>
+  <p>Developed by Offensive Security and launched in 2013 (formerly BackTrack), Kali has become a core toolkit for cybersecurity pros and appears in media like <em>Mr. Robot</em> :contentReference[oaicite:4]{index=4}.</p>
+  <ul>
+    <li><strong>Open-source & free</strong>—no cost, community-driven :contentReference[oaicite:5]{index=5}.</li>
+    <li><strong>Supports multiple platforms:</strong> x86/x64 desktops, ARM devices (Raspberry Pi), WSL/Android (NetHunter) :contentReference[oaicite:6]{index=6}.</li>
+    <li><strong>Ideal for:</strong> pentesting, wireless attacks, forensic analysis, phishing, vulnerability scanning, and more :contentReference[oaicite:7]{index=7}.</li>
+  </ul>
+</section>
+
+<footer id="contact">
+  <div class="section">
+    <h2>Contact & Connect</h2>
+    <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+    <p>Subscribe on YouTube: <a href="https://www.youtube.com/channel/UCD-L646gqj0F_bIe2xZ8FYw" target="_blank">Your Channel</a></p>
+  </div>
+  <p>&copy; 2025 Your Channel Name</p>
+</footer>
+
+</body>
+</html>
