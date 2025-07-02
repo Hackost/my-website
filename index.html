@@ -6,12 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CyberFraggers – Official Site</title>
   <link rel="icon" type="image/png" href="https://yt3.googleusercontent.com/xv0H_YDp_8vjrcSuHKDD-eqQZDW3vc_nhTutoZWE_v9wvvSynIdCdp9nv7SB4cj3uSswJgj_-Q=s160-c-k-c0x00ffffff-no-rj">
+  
+ <style>
+    #links ul {
+  list-style-type: none;
+  padding: 0;
+}
 
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
+#links li {
+  margin: 0.5rem 0;
+}
 
+#links a {
+  color: #00ffff;
+  text-decoration: none;
+}
+
+#links a:hover {
+  text-shadow: 0 0 5px #00ffff;
+}
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
@@ -23,7 +36,6 @@
       background-color: #0a0f13;
       background-size: contain;
       background-attachment: fixed;
-      transition: background 0.3s, color 0.3s;
     }
 
     header {
@@ -33,9 +45,6 @@
       text-align: left;
       font-family: 'Orbitron', sans-serif;
       border-bottom: 1px solid #00ffcc;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
     }
 
     header h1 {
@@ -58,7 +67,6 @@
       margin: 0 1rem;
       color: #00ffcc;
       text-decoration: none;
-      transition: color 0.3s, text-shadow 0.3s;
     }
 
     nav a:hover {
@@ -95,11 +103,6 @@
       background-color: rgba(0, 0, 0, 0.6);
       border-radius: 10px;
       box-shadow: 0 0 10px #00ffcc44;
-      transition: box-shadow 0.3s;
-    }
-
-    .section:hover {
-      box-shadow: 0 0 20px #00ffcc99;
     }
 
     .videos iframe {
@@ -122,70 +125,13 @@
       border-radius: 8px;
       border: 2px solid #00ffcc;
       box-shadow: 0 0 10px #00ffcc33;
-      transition: transform 0.3s;
-    }
-
-    .gallery img:hover {
-      transform: scale(1.05);
     }
 
     a {
       color: #00ffff;
-      transition: text-shadow 0.3s;
     }
 
     a:hover {
-      text-shadow: 0 0 5px #00ffff;
-    }
-
-    .dark-mode {
-      background: #111;
-      color: #0ff;
-    }
-
-    .dark-toggle {
-      position: fixed;
-      top: 1rem;
-      right: 1rem;
-      background: #111;
-      color: #0ff;
-      padding: 0.5rem 1rem;
-      border: 1px solid #0ff;
-      border-radius: 5px;
-      cursor: pointer;
-      z-index: 2000;
-    }
-
-    #back-to-top {
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      background: #00ffcc;
-      color: #000;
-      border: none;
-      padding: 10px 15px;
-      border-radius: 5px;
-      cursor: pointer;
-      font-weight: bold;
-      display: none;
-      z-index: 1000;
-    }
-
-    #links ul {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    #links li {
-      margin: 0.5rem 0;
-    }
-
-    #links a {
-      color: #00ffff;
-      text-decoration: none;
-    }
-
-    #links a:hover {
       text-shadow: 0 0 5px #00ffff;
     }
 
@@ -202,25 +148,88 @@
     }
   </style>
 </head>
+
 <body>
-  <button class="dark-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
-  <button id="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑ Top</button>
 
-  <!-- Your existing HTML remains unchanged and will go here -->
+ <header style="text-align: center;">
+  <img src="https://yt3.googleusercontent.com/xv0H_YDp_8vjrcSuHKDD-eqQZDW3vc_nhTutoZWE_v9wvvSynIdCdp9nv7SB4cj3uSswJgj_-Q=s160-c-k-c0x00ffffff-no-rj"
+       alt="CyberFraggers Logo"
+       style="max-width: 100px; display: block; margin: 0 auto;">
+  <h1>CyberFraggers</h1>
+  <p class="kali-tip">🛡 Powered by Kali Linux – for ethical hackers</p>
+  <nav>
+    <a href="#links">Links</a>
+    <a href="#videos">Videos</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#kali">About Kali Linux</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-  <script>
-    function toggleDarkMode() {
-      document.body.classList.toggle('dark-mode');
-    }
+  <section class="hero">
+    <img src="https://yt3.googleusercontent.com/298rEzHYee4-7cE4D-8I3raEvIWORlVXgWiEkuPjUsOkFqUNXFFqZCdVNmi1QTqP5CUETSAKtA=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj" alt="Channel Banner">
+    <div class="overlay">
+      <h2>Welcome to CyberFraggers</h2>
+      <p>Explore my videos, enjoy exclusive photos, and learn about Kali Linux.</p>
+      <a href="https://www.youtube.com/channel/UCD-L646gqj0F_bIe2xZ8FYw" target="_blank" style="background:#ff0000; color:#fff; padding:10px 20px; text-decoration:none; border-radius:5px;">Subscribe on YouTube</a>
+    </div>
+  </section>
 
-    const topButton = document.getElementById('back-to-top');
-    window.onscroll = () => {
-      if (window.scrollY > 300) {
-        topButton.style.display = 'block';
-      } else {
-        topButton.style.display = 'none';
-      }
-    };
-  </script>
+  <section id="videos" class="section">
+    <h2>📺 Latest Videos</h2>
+    <div class="videos">
+      <!-- Replace VIDEO_ID_# with real IDs -->
+      <iframe src="https://www.youtube.com/embed/ttnvuXvQHUk" allowfullscreen></iframe>
+      Download & Install Kali Linux the EASY Way! | Step-by-Step Guide for Beginners ✅
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" allowfullscreen></iframe>
+    </div>
+    <p style="text-align:center">
+      <a href="https://www.youtube.com/channel/UCD-L646gqj0F_bIe2xZ8FYw" target="_blank">View all videos on YouTube</a>
+    </p>
+  </section>
+  
+<section id="links" class="section">
+  <h2>🔗 Useful Links</h2>
+  <ul>
+    <li><a href="https://www.kali.org/" target="_blank">Official Kali Linux Website</a></li>
+    <li><a href="https://docs.python.org/3/" target="_blank">Python 3 Documentation</a></li>
+    <li><a href="https://flask.palletsprojects.com/" target="_blank">Flask Web Framework</a></li>
+    <li><a href="https://github.com" target="_blank">GitHub</a></li>
+  </ul>
+</section>
+
+  <section id="gallery" class="section">
+    <h2>🖼 Related images</h2>
+    <div class="gallery">
+      <img src="https://www.kali.org/images/notebook-kali-2024.1.jpg" alt="Cool image 1">
+      <img src="https://www.kali.org/images/kali-desktop-xfce.jpg" alt="Cool image 2">
+      <img src="https://www.offsec.com/app/uploads/2020/03/kali-customization.png" alt="Cool image 3">
+    </div>
+  </section>
+
+  <section id="kali" class="section">
+    <h2>🛡 About Kali Linux</h2>
+    <p><strong>Kali Linux</strong> is a Debian-based, open-source Linux distribution tailored for cybersecurity, penetration testing, digital forensics, and reverse engineering.</p>
+    <p>It comes pre-installed with over 600 essential security tools—like <em>Nmap</em>, <em>Metasploit</em>, <em>Wireshark</em>, and <em>John the Ripper</em>.</p>
+    <p>Developed by Offensive Security and launched in 2013 (formerly BackTrack), Kali has become a core toolkit for cybersecurity pros and appears in media like <em>Mr. Robot</em>.</p>
+    <ul>
+      <li><strong>Open-source & free</strong>—no cost, community-driven.</li>
+      <li><strong>Supports multiple platforms:</strong> x86/x64 desktops, ARM devices (Raspberry Pi), WSL/Android (NetHunter).</li>
+      <li><strong>Ideal for:</strong> pentesting, wireless attacks, forensic analysis, phishing, vulnerability scanning, and more.</li>
+    </ul>
+  </section>
+
+  <footer id="contact">
+    <div class="section">
+      <h2>Contact & Connect</h2>
+      <p>Subscribe on YouTube: <a href="https://www.youtube.com/channel/UCD-L646gqj0F_bIe2xZ8FYw" target="_blank">CyberFragger</a></p>
+    </div>
+    <p style="text-align:center;">&copy; 2025 CyberFraggers</p>
+  </footer>
+
+  <p style="text-align:center;"><a href="tools.html">🔧 Tools Page</a></p>
+ <img src="https://yt3.googleusercontent.com/xv0H_YDp_8vjrcSuHKDD-eqQZDW3vc_nhTutoZWE_v9wvvSynIdCdp9nv7SB4cj3uSswJgj_-Q=s160-c-k-c0x00ffffff-no-rj" alt="CyberFraggers Logo" style="max-width:100px;">
+
 </body>
 </html>
