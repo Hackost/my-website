@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CyberFraggers Tools</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #0a0f13;
+      color: #00ffcc;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      text-align: center;
+      color: #00ffff;
+    }
+    .tool {
+      background-color: rgba(0, 0, 0, 0.5);
+      border: 1px solid #00ffcc;
+      border-radius: 10px;
+      padding: 1rem;
+      margin: 1rem auto;
+      max-width: 800px;
+      box-shadow: 0 0 10px #00ffcc33;
+    }
+    .tool h2 {
+      color: #00ffff;
+    }
+    .tool p {
+      margin: 0.5rem 0;
+    }
+    a {
+      color: #00ffff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-shadow: 0 0 5px #00ffff;
+    }
+    .back {
+      display: block;
+      text-align: center;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>🔧 CyberFraggers Toolkit</h1>
+
+  <div class="tool">
+    <h2><a href="https://www.kali.org/tools/nmap/" target="_blank">Nmap</a></h2>
+    <p>Powerful network scanner used to discover hosts and services on a computer network.</p>
+    <p><code>nmap -sV 192.168.1.1</code></p>
+  </div>
+
+  <div class="tool">
+    <h2><a href="https://www.kali.org/tools/metasploit-framework/" target="_blank">Metasploit Framework</a></h2>
+    <p>A penetration testing platform that enables you to find, exploit, and validate vulnerabilities.</p>
+    <p><code>msfconsole</code></p>
+  </div>
+
+  <div class="tool">
+    <h2><a href="https://www.kali.org/tools/wireshark/" target="_blank">Wireshark</a></h2>
+    <p>Network protocol analyzer that captures and displays data packets in real time.</p>
+    <p><code>wireshark</code></p>
+  </div>
+
+  <div class="tool">
+    <h2><a href="https://github.com/sqlmapproject/sqlmap" target="_blank">SQLmap</a></h2>
+    <p>Automated tool for detecting and exploiting SQL injection flaws in databases.</p>
+    <p><code>sqlmap -u "http://target.com/page.php?id=1" --dbs</code></p>
+  </div>
+
+  <div class="tool">
+    <h2><a href="https://www.kali.org/tools/hydra/" target="_blank">Hydra</a></h2>
+    <p>Very fast password cracker that supports numerous protocols to attack.</p>
+    <p><code>hydra -l admin -P passlist.txt ftp://192.168.1.1</code></p>
+  </div>
+
+  <div class="tool">
+    <h2><a href="https://www.kali.org/tools/john/" target="_blank">John the Ripper</a></h2>
+    <p>Fast password cracker, used to perform dictionary attacks on password hashes.</p>
+    <p><code>john --wordlist=rockyou.txt hash.txt</code></p>
+  </div>
+
+  <p class="back"><a href="index.html">⬅️ Back to Home</a></p>
+</body>
+</html>
